@@ -12,37 +12,34 @@ Within the Logisim simulator, this circuit prints "Hello World!" three times, th
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
-
-{Describe the tools that you used to develop the software}
 For developing this, I used my preferred code editor, Kate, as it has assembly syntax highlighting built in.
 For the simulated hardware I used Logisim Evolution, an open source circuit simulator.
 
-{Describe the programming language that you used}
 The programming language used is a custom assembly instruction set:
 
-| **Opcode** | **Description**                                                            | **Usage**      |
-|:----------:|----------------------------------------------------------------------------|----------------|
-| nop        | No operation.                                                              | nop            |
-| ld         | Load an integer from ROM into a register.                                  | ld r0, 11      |
-| ldc        | Load an ASCII character from ROM into a register.                          | ldc r1, "c"    |
-| mov        | Move a value from one register to another.                                 | mov r0, r1     |
-| disp       | Display a value stored in a register.                                      | disp r4        |
-| dispd      | Display a value or character stored in ROM.                                | dispd "@"      |
-| xor        | Preform an XOR operation and store the result in the first argument.       | xor r0, r1, r2 |
-| or         | Preform an OR operation and store the result in the first argument.        | or r0, r1, r2  |
-| add        | Preform an ADD operation and store the result in the first argument.       | add r7, re, rf |
-| lsr        | Preform an logical shift right and store the result in the first argument. | lsr r0, r1     |
-| lsl        | Preform an logical shift left and store the result in the first argument.  | lsl r2, r2     |
-| com        | Preform a bit-wise complement and store the result in the first argument.  | com r2, r6     |
-| sub        | Preform an SUB operation and store the result in the first argument.       | sub r3, r2, r1 |
-| inc        | Increment register value by one.                                           | inc r2         |
-| dec        | Decrement register value by one.                                           | sub r1         |
-| cp         | Compare values in two registers. Sets compare flag if they are equal.      | cp r0, r5      |
-| jmp        | Jump to an address stored in a register.                                   | jmp rf         |
-| jp         | Jump to an address stored in ROM. Supports labels.                         | jp Start       |
-| jpc        | Jump to an address stored in ROM if compare flag is set.                   | jpc Branch     |
-| jpnc       | Jump to an address stored in ROM if compare flag is not set.               | jpnc Loop      |
-| disp_str   | Macro for displaying multi-character strings using dispd.                  | disp_str "Wow" |
+| **Opcode** | **Description**                                                            | **Usage**        |
+|:----------:|----------------------------------------------------------------------------|------------------|
+| nop        | No operation.                                                              | `nop`            |
+| ld         | Load an integer from ROM into a register.                                  | `ld r0, 11`      |
+| ldc        | Load an ASCII character from ROM into a register.                          | `ldc r1, "c"`    |
+| mov        | Move a value from one register to another.                                 | `mov r0, r1`     |
+| disp       | Display a value stored in a register.                                      | `disp r4`        |
+| dispd      | Display a value or character stored in ROM.                                | `dispd "@"`      |
+| xor        | Preform an XOR operation and store the result in the first argument.       | `xor r0, r1, r2` |
+| or         | Preform an OR operation and store the result in the first argument.        | `or r0, r1, r2`  |
+| add        | Preform an ADD operation and store the result in the first argument.       | `add r7, re, rf` |
+| lsr        | Preform an logical shift right and store the result in the first argument. | `lsr r0, r1`     |
+| lsl        | Preform an logical shift left and store the result in the first argument.  | `lsl r2, r2`     |
+| com        | Preform a bit-wise complement and store the result in the first argument.  | `com r2, r6`     |
+| sub        | Preform an SUB operation and store the result in the first argument.       | `sub r3, r2, r1` |
+| inc        | Increment register value by one.                                           | `inc r2`         |
+| dec        | Decrement register value by one.                                           | `sub r1`         |
+| cp         | Compare values in two registers. Sets compare flag if they are equal.      | `cp r0, r5`      |
+| jmp        | Jump to an address stored in a register.                                   | `jmp rf`         |
+| jp         | Jump to an address stored in ROM. Supports labels.                         | `jp Start`       |
+| jpc        | Jump to an address stored in ROM if compare flag is set.                   | `jpc Branch`     |
+| jpnc       | Jump to an address stored in ROM if compare flag is not set.               | `jpnc Loop`      |
+| disp_str   | Macro for displaying multi-character strings using dispd.                  | `disp_str "Wow"` |
 
 # Useful Websites
 As the processor is based on the GameBoy, these assembly tutorials and hardware documenation proved useful:
