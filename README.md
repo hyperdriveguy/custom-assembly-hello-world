@@ -7,18 +7,17 @@ I'm using this project as a beginning stepping stone for what I wish to accompli
 
 Within the Logisim simulator, this program prints "Hello World!" to the simulated display three times, then prints "End program."
 
-{Provide a link to your YouTube demonstration.  It should be a one minute demo of the software running and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[See a video demo and explanation](https://hyperdriveguy.github.io/web-frontend-practice/videos/hello-world-asm-walkthrough.html)
 
 # Development Environment
+
 For developing this, I used my preferred code editor, Kate, as it has assembly syntax highlighting built in.
 For the simulated hardware I used Logisim Evolution, an open source circuit simulator.
 
 The programming language used is a custom assembly instruction set:
 
 | **Opcode** | **Description**                                                            | **Usage**        |
-|:----------:|----------------------------------------------------------------------------|------------------|
+|:----------:| -------------------------------------------------------------------------- | ---------------- |
 | nop        | No operation.                                                              | `nop`            |
 | ld         | Load an integer from ROM into a register.                                  | `ld r0, 11`      |
 | ldc        | Load an ASCII character from ROM into a register.                          | `ldc r1, "c"`    |
@@ -42,6 +41,8 @@ The programming language used is a custom assembly instruction set:
 | disp_str   | Macro for displaying multi-character strings using dispd.                  | `disp_str "Wow"` |
 
 # Useful Websites
+
 As the processor is based on the GameBoy, these assembly tutorials and hardware documenation proved useful:
+
 * [Pan Docs on GB Dev](https://gbdev.io/pandocs/)
 * [GB ASM Tutorial](https://eldred.fr/gb-asm-tutorial/)
