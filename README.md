@@ -42,7 +42,7 @@ The programming language used is a custom assembly instruction set:
 
 # Useful Websites
 
-As the processor is based on the GameBoy, these assembly tutorials and hardware documenation proved useful:
+As the processor is based on the GameBoy, these assembly tutorials and hardware documentation proved useful:
 
 * [Pan Docs on GB Dev](https://gbdev.io/pandocs/)
 * [GB ASM Tutorial](https://eldred.fr/gb-asm-tutorial/)
