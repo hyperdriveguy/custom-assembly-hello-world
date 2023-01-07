@@ -1,6 +1,6 @@
 # Overview
 
-This is a hello world example that showcases a simple 8 bit CPU architechure and assembler written in Python.
+This is a hello world example that showcases a simple 8 bit CPU architecture and assembler written in Python.
 The architechure is loosely inspired by the 8080 processor and the SM83 processor, the processor used in the GameBoy and GameBoy Color.
 I made this to showcase my current understanding of CPU architechure and assembly programming.
 I'm using this project as a beginning stepping stone for what I wish to accomplish as a Computer Engineer.
